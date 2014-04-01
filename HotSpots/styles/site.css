@@ -1,0 +1,67 @@
+﻿.element-not-visible {
+    display: none;
+}
+
+.float-left {
+    float: left;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.clear-both {
+    clear: both;
+}
+
+/* HotSpots */
+#drawing-area-btn-group {
+    height: 40px;
+}
+
+#kop-hotspots .well {
+    height: 70px;
+}
+
+#kop-hotspots .hotspot {
+    float: left;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.well-current {
+    background-color: #d2d2d2;
+    border: 1px solid #808080;
+}
+
+path {
+    cursor: pointer;
+}
+
+.hotspot-info select {
+    width: 500px;
+}
+
+#hotspot-wrapper {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    z-index: 1;
+}
+
+#document-image {
+   position: absolute;
+   left: 0;
+   /*z-index: -10;*/
+}
+
+#drawing-area {
+    position: relative;
+}
+
+svg {
+    z-index: 10;
+}
+
+.hotspot-edit-mode {
+    cursor: crosshair;
+}

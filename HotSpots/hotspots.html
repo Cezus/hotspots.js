@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HotSpots</title>
+    <link href="styles/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="hotspots-area">
+        <div>
+            <div id="hotspot-wrapper">
+                <div id="drawing-area" style="width: 640px; height: 438px;"><img src="content/bee-191629_640.jpg" id="document-image" /></div>
+            </div>
+
+            <div id="drawing-area-btn-group">
+                <div id="new-draw-buttons">
+                    <button type="button" id="start-drawing" class="btn btn-success">Begin met tekenen</button>
+                    <button type="button" id="new-image" class="btn">Nieuwe afbeelding uploaden</button>
+                    <button type="button" id="reset-drawing" class="btn btn-danger element-not-visible">Naar beginwaarden</button>
+                </div>
+                <div id="during-draw-buttons" class="element-not-visible">
+                    <button type="button" id="close-drawing" class="btn btn-success">Sluit tekening</button>
+                    <button type="button" id="cancel-drawing" class="btn">Annuleer deze tekening</button>
+                </div>
+                <div id="edit-draw-buttons" class="element-not-visible">
+                    <button type="button" id="edit-drawing" class="btn btn-success">Tekening aanpassen</button>
+                    <button type="button" id="remove-drawing" class="btn btn-danger">Verwijder tekening</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="existing-hotspot-list">
+        <div class="well well-small hotspot-editor">
+            <input class="hotspot-id" data-val="true" data-val-number="The field HotSpotId must be a number." id="HotSpots-0-HotSpotId" name="HotSpots[0].HotSpotId" type="hidden" value="" />
+            <div class="hotspot-path">
+                <input id="polygon_1-hotspot" name="HotSpots[0].Path" type="hidden" value="M229,86L267,181L403,203L391,81Z" data-polygonid="polygon_1" />
+            </div>
+            <div class="hotspot">
+                New hotspot:
+            </div>
+            <div class="hotspot-info">
+                <div class="editor-label">
+                    <label>Titel</label>
+                </div>
+                <div class="editor-field">
+                    <input type="text" name="HotSpots[0].HotSpotTitle" value="Bee" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="scripts/jquery-1.11.0.min.js"></script>
+<script src="scripts/raphael-min.js"></script>
+<script src="app/hotspots.js"></script>
+<script src="app/hotspots.view.js"></script>
