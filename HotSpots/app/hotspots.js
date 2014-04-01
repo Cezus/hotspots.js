@@ -1,4 +1,10 @@
-﻿function HotSpots(drawingAreaId, elementSelectorWithExistingPath, options) {
+﻿/*
+ * Copyright © 2014 Cees van Altena (https://github.com/Cezus/hotspots.js)
+ * Licensed under the MIT (https://github.com/Cezus/hotspots.js/license.html) license.
+ * Date: 2014-04-01
+*/
+
+function HotSpots(drawingAreaId, elementSelectorWithExistingPath, options) {
     this.Defaults = {
         isInEditMode: false,
         drawingAreaId: drawingAreaId,
